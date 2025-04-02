@@ -1,0 +1,17 @@
+def one_iteration(n, m):
+    return n * m
+
+def n_iterations(n, m):
+    total = 0
+    for _ in range(n):
+        total += m
+    return total
+
+n = int(input("Enter a number, n: "))
+m = int(input("Enter a number, m: "))
+
+result1 = one_iteration(n, m)
+print(f"Result using one iteration: {result1}")
+
+result2 = n_iterations(n, m)
+print(f"Result using {n} iterations: {result2}")
